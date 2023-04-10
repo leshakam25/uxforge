@@ -16,7 +16,7 @@ const pages = [
 
 function Header() {
     return (
-        <AppBar color={'secondary'} position="static">
+        <AppBar color={'secondary'} position="fixed" sx={{boxShadow:'none'}}>
             <Container maxWidth="xl">
                 <Toolbar disableGutters sx={{
                     display: 'flex',

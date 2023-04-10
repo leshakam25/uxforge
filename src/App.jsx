@@ -1,8 +1,9 @@
 import './App.css'
 import "normalize.css"
-import Header from "./components/shared/header/header.jsx";
 import {Route, Routes} from "react-router-dom";
-import Homepage from "./components/pages/homepage/homepage.jsx";
+import Homepage from "./pages/homepage/homepage.jsx";
+import Header from "./shared/header/header.jsx";
+
 
 function App() {
 
