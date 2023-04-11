@@ -42,15 +42,15 @@ export const advantages = [
 export const stack = [
     {
         id: 0,
-        title: 'React',
-        text: ' JavaScript библиотека для создания пользовательских интерфейсов. React позволяет создавать компоненты, что упрощает разработку, тестирование и сопровождение кода',
-        image: 'https://i.postimg.cc/mgMJ3Cnj/react.png'
-    },
-    {
-        id: 1,
         title: 'Node.js',
         text: 'среда выполнения JavaScript, которая позволяет запускать JavaScript вне браузера. Node.js используется для создания серверной части приложения',
         image: 'https://i.postimg.cc/VsGxzYMq/nodejs.png'
+    },
+    {
+        id: 1,
+        title: 'React',
+        text: ' JavaScript библиотека для создания пользовательских интерфейсов. React позволяет создавать компоненты, что упрощает разработку, тестирование и сопровождение кода',
+        image: 'https://i.postimg.cc/mgMJ3Cnj/react.png'
     },
     {
         id: 2,
