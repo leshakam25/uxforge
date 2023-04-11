@@ -1,13 +1,19 @@
 import React from 'react';
 import Box from "@mui/material/Box";
 import TitleItem from "./titleItem.jsx";
-import {news} from '../../../../data/homePage.data.js';
 
-const Title = () => {
+
+const Title = ({titleNews}) => {
     return (
-        <Box>
-            {news && news.map((el, i)=>(
-                <TitleItem key={i} news={el}/>
+        <Box
+            sx={{
+                minHeight: '100vh',
+                display: 'flex',
+                alignItems: "center"
+            }}
+        >
+            {titleNews && titleNews.map((el, i) => (
+                <TitleItem key={i} titleNews={el}/>
             ))}
         </Box>
     );

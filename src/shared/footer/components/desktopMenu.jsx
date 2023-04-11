@@ -21,7 +21,6 @@ const DesktopMenu = ({pagesList}) => {
                     <Typography   variant={'body1'}>{page.title}</Typography>
                 </Button>
             ))}
-           <ContactButton mx={1}/>
         </Box>
     );
 };

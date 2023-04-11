@@ -7,16 +7,19 @@ const Logo = () => {
     const navigate = useNavigate();
     return (
         <Button
-            onClick={()=>navigate('/')}
+            size={'large'}
+            onClick={() => navigate('/')}
             sx={{
-            color: 'inherit',
-        }}>
+                color:"inherit"
+            }}
+        >
             <Typography
-                variant="subtitle2"
                 sx={{
-                    color: 'inherit',
+                    color: 'white',
                     textDecoration: 'none',
-                    textTransform: 'none'
+                    textTransform: 'none',
+                    fontSize: 32,
+                    letterSpacing: -3
                 }}
             >
                 UXForge

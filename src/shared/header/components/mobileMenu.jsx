@@ -6,9 +6,9 @@ import MenuItem from "@mui/material/MenuItem";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import {useNavigate} from "react-router-dom";
-import ContactButton from "../../contactButton/contactButton.jsx";
+import ContactButton from "../../components/contactButton/contactButton.jsx";
 
-const MobileMenu = ({pages}) => {
+const MobileMenu = ({pagesList}) => {
     const navigate = useNavigate();
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const handleOpenNavMenu = (event) => {
@@ -21,7 +21,6 @@ const MobileMenu = ({pages}) => {
 
     return (
         <Box sx={{display: {xs: 'flex', md: 'none'}, alignItems: 'center'}}>
-            <ContactButton/>
             <IconButton
                 size="large"
                 aria-label="account of current user"
@@ -50,7 +49,7 @@ const MobileMenu = ({pages}) => {
                     display: {xs: 'block', md: 'none'},
                 }}
             >
-                {pages.map((page, id) => (
+                {pagesList.map((page, id) => (
                     <MenuItem key={id} onClick={()=>handleCloseNavMenu(page.link)}>
                         <Typography variant={'body1'} textAlign="center">{page.title}</Typography>
                     </MenuItem>

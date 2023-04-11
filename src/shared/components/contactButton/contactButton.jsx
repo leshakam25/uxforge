@@ -1,19 +1,22 @@
 import React from 'react';
 import Button from "@mui/material/Button";
 
-const ContactButton = () => {
+const ContactButton = ({mx}) => {
     return (
         <Button
             variant={'contained'}
-
+            size={'small'}
             sx={{
                 height: 40,
                 maxWidth:320,
                 fontWeight: 800,
-                boxShadow:'none'
+                boxShadow:'none',
+                lineHeight:'100%',
+                mx:mx,
+                letterSpacing:3
             }}
         >
-            Связаться с нами
+            Связаться
         </Button>
     );
 };

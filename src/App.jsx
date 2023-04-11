@@ -3,6 +3,7 @@ import "normalize.css"
 import {Route, Routes} from "react-router-dom";
 import Homepage from "./pages/homepage/homepage.jsx";
 import Header from "./shared/header/header.jsx";
+import Footer from "./shared/footer/footer.jsx";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
                 <Route path="/" element={<Homepage/>}/>
                 <Route path="/homepage" element={<Homepage/>}/>
             </Routes>
+            <Footer/>
         </>
     )
 }

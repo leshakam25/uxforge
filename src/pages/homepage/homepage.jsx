@@ -1,11 +1,16 @@
 import React from 'react';
 import Container from "@mui/material/Container";
 import Title from "./components/title/title.jsx";
+import Advantages from "./components/advantages/advantages.jsx";
+import {advantages, titleNews, stack} from "../../data/homePage.data.js";
+import Stack from "./components/stack/stack.jsx";
 
 const Homepage = () => {
     return (
         <Container maxWidth={'xl'}>
-            <Title/>
+            <Title titleNews={titleNews}/>
+            <Advantages advantages={advantages}/>
+            <Stack stack={stack}/>
         </Container>
     );
 };

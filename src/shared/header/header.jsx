@@ -5,14 +5,7 @@ import Container from '@mui/material/Container';
 import MobileMenu from "./components/mobileMenu.jsx";
 import DesktopMenu from "./components/desktopMenu.jsx";
 import Logo from "./components/logo.jsx";
-
-const pages = [
-    {title: "Главная", link: '/homepage'},
-    {title: "Услуги", link: '/services'},
-    {title: "Портфолио", link: '/portfolio'},
-    {title: "Цены", link: '/prices'},
-    {title: "Контакты", link: '/contacts'}
-];
+import {pagesList} from "../../data/pagesList.data.js";
 
 function Header() {
     return (
@@ -25,8 +18,8 @@ function Header() {
                     alignItems: 'center'
                 }}>
                     <Logo/>
-                    <MobileMenu pages={pages}/>
-                    <DesktopMenu pages={pages}/>
+                    <MobileMenu pagesList={pagesList}/>
+                    <DesktopMenu pagesList={pagesList}/>
                 </Toolbar>
             </Container>
         </AppBar>

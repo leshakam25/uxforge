@@ -1,28 +1,33 @@
 import React from 'react';
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import ContactButton from "../../../../shared/contactButton/contactButton.jsx";
+import ContactButton from "../../../../shared/components/contactButton/contactButton.jsx";
 
-const TitleItem = ({news}) => {
+const TitleItem = ({titleNews}) => {
     return (
         <Box sx={{
-            display:'flex',
-            flexDirection:'column',
-            minHeight:'600px',
-            justifyContent:'center',
-
+            display: 'flex',
+            flexDirection: 'column',
+            minHeight: '600px',
+            justifyContent: 'center',
         }}>
-            <Typography variant={'subtitle1'} sx={{maxWidth: '880px'}}>
-                {news.title}
+            <Typography
+                variant={'subtitle1'}
+                sx={{
+                    maxWidth: '880px',
+                    py: 6
+                }}
+            >
+                {titleNews.title}
             </Typography>
-            <Typography variant={'body1'} sx={{maxWidth: '740px'}}>
-                {news.text}
-            </Typography>
-            <Typography variant={'body1'} sx={{
-                opacity:0.6,
-                mb:4
-            }}>
-                {news.createdAt}
+            <Typography
+                variant={'body1'}
+                sx={{
+                    maxWidth: '740px',
+                    mb: 4
+                }}
+            >
+                {titleNews.text}
             </Typography>
             <ContactButton/>
         </Box>
