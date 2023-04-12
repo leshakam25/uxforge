@@ -2,7 +2,6 @@ import React from 'react';
 import Container from "@mui/material/Container";
 import ServicesList from "./components/servicesList/servicesList.jsx";
 import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
 
 const Services = () => {
     return (
