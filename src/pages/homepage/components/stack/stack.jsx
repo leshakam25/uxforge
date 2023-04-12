@@ -12,7 +12,8 @@ const Stack = ({stack}) => {
             <Box sx={{
                 display:'flex',
                 flexFlow:'row wrap',
-                justifyContent:'space-between'
+                justifyContent:'space-between',
+
             }}>
                 {stack && stack.map((el, i) => (
                     <StackItem key={i} stack={el}/>

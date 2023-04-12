@@ -7,7 +7,9 @@ import Stack from "./components/stack/stack.jsx";
 
 const Homepage = () => {
     return (
-        <Container maxWidth={'xl'}>
+        <Container
+            maxWidth={'xl'}
+        >
             <Title titleNews={titleNews}/>
             <Advantages advantages={advantages}/>
             <Stack stack={stack}/>

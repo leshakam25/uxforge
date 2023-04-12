@@ -3,7 +3,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import { useNavigate } from "react-router-dom";
-import ContactButton from "../../components/contactButton/contactButton.jsx";
+import ContactButton from "../../contactButton/contactButton.jsx";
 
 const DesktopMenu = ({pagesList}) => {
     const navigate = useNavigate();

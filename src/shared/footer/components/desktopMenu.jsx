@@ -2,8 +2,7 @@ import React from 'react';
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import { useNavigate } from "react-router-dom";
-import ContactButton from "../../components/contactButton/contactButton.jsx";
+import {useNavigate} from "react-router-dom";
 
 const DesktopMenu = ({pagesList}) => {
     const navigate = useNavigate();
@@ -15,10 +14,14 @@ const DesktopMenu = ({pagesList}) => {
             {pagesList.map((page, id) => (
                 <Button
                     key={id}
-                    onClick={()=> navigate(page.link)}
+                    onClick={() => navigate(page.link)}
                     sx={{my: 2, color: 'white', display: 'block', textTransform: 'none'}}
                 >
-                    <Typography   variant={'body1'}>{page.title}</Typography>
+                    <Typography
+                        variant={'body1'}
+                    >
+                        {page.title}
+                    </Typography>
                 </Button>
             ))}
         </Box>

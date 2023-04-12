@@ -6,7 +6,6 @@ import MenuItem from "@mui/material/MenuItem";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import {useNavigate} from "react-router-dom";
-import ContactButton from "../../components/contactButton/contactButton.jsx";
 
 const MobileMenu = ({pagesList}) => {
     const navigate = useNavigate();
@@ -20,7 +19,12 @@ const MobileMenu = ({pagesList}) => {
     };
 
     return (
-        <Box sx={{display: {xs: 'flex', md: 'none'}, alignItems: 'center'}}>
+        <Box
+            sx={{
+                display: {xs: 'flex', md: 'none'},
+                alignItems: 'center'
+            }}
+        >
             <IconButton
                 size="large"
                 aria-label="account of current user"
@@ -50,7 +54,7 @@ const MobileMenu = ({pagesList}) => {
                 }}
             >
                 {pagesList.map((page, id) => (
-                    <MenuItem key={id} onClick={()=>handleCloseNavMenu(page.link)}>
+                    <MenuItem key={id} onClick={() => handleCloseNavMenu(page.link)}>
                         <Typography variant={'body1'} textAlign="center">{page.title}</Typography>
                     </MenuItem>
                 ))}

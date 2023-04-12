@@ -1,7 +1,7 @@
 import React from 'react';
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import ContactButton from "../../../../shared/components/contactButton/contactButton.jsx";
+import ContactButton from "../../../../shared/contactButton/contactButton.jsx";
 
 const TitleItem = ({titleNews}) => {
     return (

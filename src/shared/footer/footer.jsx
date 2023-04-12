@@ -6,17 +6,29 @@ import {pagesList} from "../../data/pagesList.data.js";
 import DesktopMenu from "./components/desktopMenu.jsx";
 import Container from "@mui/material/Container";
 import SubscribeFooterForm from "./components/subscribeFooterForm.jsx";
+import ContactBlock from "./components/contactBlock.jsx";
 
 const Footer = () => {
     return (
         <Box
             sx={{
-                minHeight: 560,
-                background:'#232536'
+                background:'#232536',
+                py:2
             }}
         >
-            <Container maxWidth="xl">
-                <Toolbar disableGutters sx={{
+            <Container
+                maxWidth="xl"
+                sx={{
+                    height:'100%',
+                    display:'flex',
+                    flexDirection:'column',
+                    justifyContent:'space-between',
+                    gap:2,
+                }}
+            >
+                <Toolbar
+                    disableGutters
+                    sx={{
                     display: 'flex',
                     flexDirection: 'row',
                     justifyContent: 'space-between',
@@ -26,6 +38,7 @@ const Footer = () => {
                     <DesktopMenu pagesList={pagesList}/>
                 </Toolbar>
                 <SubscribeFooterForm/>
+                <ContactBlock/>
             </Container>
         </Box>
     );
