@@ -1,17 +1,16 @@
 import React from 'react';
 import Container from "@mui/material/Container";
-import ServicesList from "./components/servicesList/servicesList.jsx";
 import TitleBlock from "../../shared/TitleBlock.jsx";
 
-const Services = () => {
+const Contacts = () => {
     return (
         <Container
             maxWidth={'xl'}
+            sx={{mt: 9}}
         >
-            <TitleBlock title={'Услуги нашей студии'}/>
-            <ServicesList/>
+            <TitleBlock title={"Контакты"}/>
         </Container>
     );
 };
 
-export default Services;
+export default Contacts;

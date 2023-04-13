@@ -1,7 +1,7 @@
 import React from 'react';
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import ContactButton from "../../../../shared/contactButton/contactButton.jsx";
+import FeedbackButton from "../../../../shared/contactButton/feedbackButton.jsx";
 
 const TitleItem = ({titleNews}) => {
     return (
@@ -29,7 +29,7 @@ const TitleItem = ({titleNews}) => {
             >
                 {titleNews.text}
             </Typography>
-            <ContactButton/>
+            <FeedbackButton/>
         </Box>
     );
 };
