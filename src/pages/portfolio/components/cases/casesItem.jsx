@@ -15,65 +15,53 @@ const CasesItem = ({cases}) => {
 
     return (
         <>
-        <Card
-            sx={{
-                width: '100%',
-                boxShadow: 'none',
-                my: 2
-            }}
-        >
-            <CardActionArea
-                onClick={handleOpen}
+            <Card
                 sx={{
-                    p: 4,
-                    display: 'flex',
-                    flexFlow: 'row',
-                    justifyContent: 'left',
-                    alignItems: 'center',
-                    position: 'relative'
+                    maxWidth: {xs: '100%', md: '50%'},
+                    boxShadow: 'none',
+                    my: 2
                 }}
             >
-                <CardMedia
-                    component={'img'}
-                    src={cases.image}
+                <CardActionArea
+                    onClick={handleOpen}
                     sx={{
-                        maxWidth: 200,
-                        maxHeight: 200
-                    }}
-                />
-                <Box
-                    sx={{
-                        m: '0 auto',
-                        overflow: 'auto',
-                        maxHeight: 200,
-                        maxWidth: 600
+                        p: 2,
+                        display: 'flex',
+                        flexFlow: 'row',
+                        alignItems: 'center',
+                        position: 'relative'
                     }}
                 >
-                    <Typography
-                        variant={"h3"}
+                    <CardMedia
+                        component={'img'}
+                        src={cases.image}
+                        sx={{
+                            maxWidth: 200,
+                            maxHeight: 200,
+                            px: 2
+                        }}
+                    />
+                    <Box
+                        sx={{
+                            m: '0 auto',
+                            overflow: 'auto',
+                            maxHeight: 200,
+                            maxWidth: 400
+                        }}
                     >
-                        {cases.title}
-                    </Typography>
-                    <Typography
-                        variant={'body1'}
-                    >
-                        {cases.text}
-                    </Typography>
-                </Box>
-                <Typography
-                    color={'#aeaeae'}
-                    fontWeight={800}
-                    letterSpacing={4}
-                    sx={{
-                        position: 'absolute',
-                        top: "center",
-                        right: 16
-                    }}
-                >
-                    Подробно
-                </Typography>
-            </CardActionArea>
-        </Card>
+                        <Typography
+                            variant={"h3"}
+                        >
+                            {cases.title}
+                        </Typography>
+                        <Typography
+                            variant={'body1'}
+                        >
+                            {cases.text}
+                        </Typography>
+                    </Box>
+                </CardActionArea>
+            </Card>
             <Modal
                 aria-labelledby="transition-modal-title"
                 aria-describedby="transition-modal-description"
@@ -95,23 +83,42 @@ const CasesItem = ({cases}) => {
                         transform: 'translate(-50%, -50%)',
                         bgcolor: 'background.paper',
                         boxShadow: 24,
-                        p: 2,
+                        p: {xs:1,md:3},
                         maxHeight: '88vh',
-                        width: '90vh',
+                        maxWidth: '90vh',
                         overflowY: 'auto',
-                        borderRadius:'4px'
+                        borderRadius: '4px',
+                        display: 'flex',
+                        flexFlow:{xs:'column nowrap', md:'row nowrap'}
                     }}>
                         <CardMedia
                             component={'img'}
                             src={cases.image}
                             sx={{
-                                maxWidth: 600,
-                                maxHeight: 600
+                                maxWidth: 400,
+                                maxHeight: 400,
+                                mx: 2
                             }}
                         />
-                        <Typography>
-                            {cases.fullText}
-                        </Typography>
+                        <Box
+                            sx={{
+                                maxWidth: 660
+                            }}
+                        >
+                            <Typography
+                                gutterBottom
+                                variant={'h4'}
+                                textAlign={'right'}
+                            >
+                                Проделанная работа
+                            </Typography>
+                            <Typography
+                                variant={'body1'}
+                                textAlign={'left'}
+                            >
+                                {cases.fullText}
+                            </Typography>
+                        </Box>
                         <IconButton
                             onClick={handleClose}
                             color={'error'}
@@ -120,7 +127,7 @@ const CasesItem = ({cases}) => {
                                 position: "absolute",
                                 top: 0,
                                 right: 0,
-                                opacity:0.9
+                                opacity: 0.9
                             }}
                         >
                             <CancelIcon/>
@@ -128,7 +135,7 @@ const CasesItem = ({cases}) => {
                     </Box>
                 </Fade>
             </Modal>
-            </>
+        </>
     );
 };
 
