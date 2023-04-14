@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from "@mui/material/Container";
-import TitleBlock from "../../shared/TitleBlock.jsx";
-import Cases from "./components/cases.jsx";
+import TitleBlock from "../../shared/titleBlock/titleBlock.jsx";
+import Cases from "./components/cases/cases.jsx";
 import {cases} from "../../data/portfolio.data.js";
 
 const Portfolio = () => {

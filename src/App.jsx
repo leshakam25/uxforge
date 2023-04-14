@@ -8,12 +8,13 @@ import Services from "./pages/services/services.jsx";
 import Portfolio from "./pages/portfolio/portfolio.jsx";
 import Contacts from "./pages/contacts/contacts.jsx";
 import Prices from "./pages/prices/prices.jsx";
+import Box from "@mui/material/Box";
 
 
 function App() {
 
     return (
-        <>
+        <Box>
             <Header/>
             <Routes>
                 <Route path="/" element={<Homepage/>}/>
@@ -24,7 +25,7 @@ function App() {
                 <Route path="/contacts" element={<Contacts/>}/>
             </Routes>
             <Footer/>
-        </>
+        </Box>
     )
 }
 

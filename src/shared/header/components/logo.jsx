@@ -19,7 +19,7 @@ const Logo = () => {
                     textDecoration: 'none',
                     textTransform: 'none',
                     fontSize: 32,
-                    letterSpacing: -3
+                    letterSpacing: 13
                 }}
             >
                 UXForge

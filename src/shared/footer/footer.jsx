@@ -12,28 +12,29 @@ const Footer = () => {
     return (
         <Box
             sx={{
-                background:'#232536',
-                py:2
+                background: '#232536',
+                py: 2,
             }}
         >
             <Container
                 maxWidth="xl"
                 sx={{
-                    height:'100%',
-                    display:'flex',
-                    flexDirection:'column',
-                    justifyContent:'space-between',
-                    gap:2,
+                    height: '100%',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'space-between',
+                    gap: 2,
                 }}
             >
                 <Toolbar
                     disableGutters
                     sx={{
-                    display: 'flex',
-                    flexDirection: 'row',
-                    justifyContent: 'space-between',
-                    alignItems: 'center'
-                }}>
+                        display: 'flex',
+                        flexDirection: 'row',
+                        justifyContent: 'space-between',
+                        alignItems: 'center'
+                    }}
+                >
                     <Logo/>
                     <DesktopMenu pagesList={pagesList}/>
                 </Toolbar>

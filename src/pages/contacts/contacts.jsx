@@ -1,6 +1,6 @@
 import React from 'react';
 import Container from "@mui/material/Container";
-import TitleBlock from "../../shared/TitleBlock.jsx";
+import TitleBlock from "../../shared/titleBlock/titleBlock.jsx";
 
 const Contacts = () => {
     return (

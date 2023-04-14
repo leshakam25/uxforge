@@ -7,7 +7,7 @@ const Stack = ({stack}) => {
     return (
         <Box>
             <Typography variant={'h1'}>
-                Технологии используемые при создании web приложений
+                Технологии используемые при создании web приложений и сайтов
             </Typography>
             <Box sx={{
                 display:'flex',
