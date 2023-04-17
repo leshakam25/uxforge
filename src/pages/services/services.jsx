@@ -5,9 +5,7 @@ import TitleBlock from "../../shared/titleBlock/titleBlock.jsx";
 
 const Services = () => {
     return (
-        <Container
-            maxWidth={'xl'}
-        >
+        <Container maxWidth={'xl'} sx={{py:4}}>
             <TitleBlock title={'Услуги нашей студии'}/>
             <ServicesList/>
         </Container>

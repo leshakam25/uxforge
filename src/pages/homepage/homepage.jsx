@@ -7,9 +7,7 @@ import Stack from "./components/stack/stack.jsx";
 
 const Homepage = () => {
     return (
-        <Container
-            maxWidth={'xl'}
-        >
+        <Container maxWidth={'xl'} sx={{py:4}}>
             <Title titleNews={titleNews}/>
             <Advantages advantages={advantages}/>
             <Stack stack={stack}/>

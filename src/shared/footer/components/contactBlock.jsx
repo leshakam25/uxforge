@@ -1,10 +1,7 @@
 import React from 'react';
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import IconButton from "@mui/material/IconButton";
-import InstagramIcon from '@mui/icons-material/Instagram';
-import TelegramIcon from '@mui/icons-material/Telegram';
-import TwitterIcon from '@mui/icons-material/Twitter';
+import SocialButtons from "../../socialButtons/socialButtons.jsx";
 
 const ContactBlock = () => {
     return (
@@ -27,29 +24,7 @@ const ContactBlock = () => {
                 Санкт-Петербург, Невский проспект д. 1 <br/>
                 Телефон для связи 8 (812) 420 69 13
             </Typography>
-            <Box>
-                <IconButton
-                    sx={{
-                        color: 'white'
-                    }}
-                >
-                    <InstagramIcon/>
-                </IconButton>
-                <IconButton
-                    sx={{
-                        color: 'white'
-                    }}
-                >
-                    <TelegramIcon/>
-                </IconButton>
-                <IconButton
-                    sx={{
-                        color: 'white'
-                    }}
-                >
-                    <TwitterIcon/>
-                </IconButton>
-            </Box>
+          <SocialButtons color={'white'}/>
         </Box>
     );
 };

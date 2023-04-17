@@ -1,17 +1,19 @@
 import React from 'react';
-import PricesListItem from "./pricesListItem.jsx";
 import Box from "@mui/material/Box";
+import DevelopPricesItem from "./developPricesItem.jsx";
 
-const PricesList = ({developPrices}) => {
+const DevelopPrices = ({developPrices}) => {
     return (
         <Box
             sx={{
-                display: 'flex'
+                display: 'flex',
+                flexFlow:'row wrap',
+                justifyContent:'center',
             }}
         >
 
             {developPrices && developPrices.map((el, i) => (
-                <PricesListItem
+                <DevelopPricesItem
                     key={i}
                     developPrices={el}
                 />
@@ -20,4 +22,4 @@ const PricesList = ({developPrices}) => {
     );
 };
 
-export default PricesList;
+export default DevelopPrices;
