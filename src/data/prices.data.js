@@ -5,13 +5,14 @@ export const developPrices = [
         subTitle: 'Визитная карточка вашей компании',
         discount: true,
         price: 25000,
-        discountPrice:15000,
+        discountPrice: 15000,
         text: 'Мы предлагаем услугу по созданию сайта-визитки для Вашего бизнеса, которая позволит расширить потенциальную аудиторию и увеличить продажи. ',
         fullText: 'Наша команда профессиональных веб-разработчиков создаст для Вас качественный сайт-визитку с современным дизайном, удобной навигацией и адаптивной версткой для просмотра на любых устройствах - от ПК до смартфонов. \n' +
             '\n' +
             'Мы учитываем все Ваши пожелания и требования к функционалу сайта, включая формы обратной связи, онлайн-консультанта, блоги и многое другое. \n',
-        image:'https://i.postimg.cc/ZqbC5NQk/vizitka.jpg'
-    }, {
+        image: 'https://i.postimg.cc/FFp9qZwP/business-cards.png'
+    },
+    {
         id: 1,
         title: 'Посадочная страница',
         subTitle: 'Визитная карточка компании с конверсионными действиями',
@@ -97,7 +98,7 @@ export const seoPrices = [
     {
         id: 0,
         title: 'Аудит сайта',
-        subtitle:'',
+        subtitle: '',
         discount: false,
         price: 20000,
         discountPrice: 15000,
@@ -112,7 +113,7 @@ export const seoPrices = [
     {
         id: 1,
         title: 'Продвижение одностраничного сайта',
-        subtitle:'',
+        subtitle: '',
         discount: false,
         price: 20000,
         discountPrice: 15000,
@@ -129,7 +130,7 @@ export const seoPrices = [
     {
         id: 2,
         title: 'Продвижение многостраничного сайта',
-        subtitle:'К работам по продвижению одностраничного сайта добавляются:',
+        subtitle: 'К работам по продвижению одностраничного сайта добавляются:',
         discount: false,
         price: 30000,
         discountPrice: 20000,
@@ -141,7 +142,7 @@ export const seoPrices = [
     {
         id: 3,
         title: 'Внешнее продвижение',
-        subtitle:'',
+        subtitle: '',
         discount: true,
         price: 20000,
         discountPrice: 15000,
