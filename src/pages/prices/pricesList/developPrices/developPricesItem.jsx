@@ -80,27 +80,26 @@ const DevelopPricesItem = ({developPrices}) => {
                     }}
                 >
                     <Typography
-                        variant={'h5'}
+                        variant={'h6'}
                         lineHeight={"100%"}
                     >
                         Стоимость от &nbsp;
-
                     </Typography>
                     <Typography
-                        variant={'h5'}
+                        variant={'h6'}
                         lineHeight={"100%"}
                     >
                         {developPrices.discount === false && developPrices.price}
                     </Typography>
                     <Typography
-                        variant={'h5'}
+                        variant={'h6'}
                         lineHeight={"100%"}
                     >
                         {developPrices.discount === true && developPrices.discountPrice}
                     </Typography>
                     &nbsp;
                     <Typography
-                        variant={'h6'}
+                        variant={'body2'}
                         lineHeight={"100%"}
                         sx={{
                             textDecoration: 'line-through'
