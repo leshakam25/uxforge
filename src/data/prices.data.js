@@ -2,6 +2,7 @@ export const developPrices = [
     {
         id: 0,
         title: 'Сайт-визитка',
+        title2: 'сайта-визитки',
         subTitle: 'Визитная карточка вашей компании',
         discount: true,
         price: 25000,
@@ -15,6 +16,7 @@ export const developPrices = [
     {
         id: 1,
         title: 'Посадочная страница',
+        title2: 'посадочной страницы',
         subTitle: 'Визитная карточка компании с конверсионными действиями',
         discount: true,
         price: 20000,
@@ -33,6 +35,7 @@ export const developPrices = [
     {
         id: 2,
         title: 'Корпоративный сайт',
+        title2: 'корпоративного сайта',
         subTitle: 'Многостраничное представление компании',
         discount: false,
         price: 60000,
@@ -48,6 +51,7 @@ export const developPrices = [
     {
         id: 3,
         title: 'Промо-сайт',
+        title2: 'промо сайта',
         subTitle: 'Имиджевый сайт, насыщенный анимациями и качественной графикой',
         discount: false,
         price: 80000,
@@ -59,6 +63,7 @@ export const developPrices = [
     {
         id: 4,
         title: 'Интернет-магазин',
+        title2: 'интернет-магазина',
         subTitle: 'Ресурс для осуществления продаж',
         discount: false,
         price: 100000,
@@ -70,6 +75,7 @@ export const developPrices = [
     {
         id: 4,
         title: 'Индивидуальный проект',
+        title2: 'индивидуального проекта',
         subTitle: 'Сложные системы, приложения и веб-приложения',
         discount: false,
         price: 125000,
