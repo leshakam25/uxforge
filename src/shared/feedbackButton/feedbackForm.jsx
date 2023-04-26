@@ -6,7 +6,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 
-function FeedbackForm({handleClose}) {
+function FeedbackForm() {
     const {
         register,
         handleSubmit

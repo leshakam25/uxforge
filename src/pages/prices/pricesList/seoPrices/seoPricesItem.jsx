@@ -6,7 +6,7 @@ import Button from "@mui/material/Button";
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import MakeOrderSeoForm from "./makeOrderSeoForm.jsx";
 import IconButton from "@mui/material/IconButton";
-import CancelIcon from "@mui/icons-material/Cancel.js";
+import CancelIcon from "@mui/icons-material/Cancel";
 
 const SeoPricesItem = ({seoPrices}) => {
     const discountIcon = 'https://i.postimg.cc/25Mw2tWb/free-icon-discount-label-2981281.png'

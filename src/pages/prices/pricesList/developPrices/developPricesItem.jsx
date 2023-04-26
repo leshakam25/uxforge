@@ -6,7 +6,7 @@ import Button from "@mui/material/Button";
 import MakeOrderDevelopForm from "./makeOrderDevelopForm.jsx";
 import DetailedOrder from "./detailedOrder.jsx";
 import IconButton from "@mui/material/IconButton";
-import CancelIcon from "@mui/icons-material/Cancel.js";
+import CancelIcon from "@mui/icons-material/Cancel";
 
 const DevelopPricesItem = ({developPrices}) => {
     const discountIcon = 'https://i.postimg.cc/25Mw2tWb/free-icon-discount-label-2981281.png'
