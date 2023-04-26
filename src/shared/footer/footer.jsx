@@ -26,18 +26,18 @@ const Footer = () => {
                     gap: 2,
                 }}
             >
-                <Toolbar
-                    disableGutters
-                    sx={{
-                        display: 'flex',
-                        flexDirection: 'row',
-                        justifyContent: 'space-between',
-                        alignItems: 'center'
-                    }}
-                >
-                    <Logo/>
-                    <DesktopMenu pagesList={pagesList}/>
-                </Toolbar>
+                {/*<Toolbar*/}
+                {/*    disableGutters*/}
+                {/*    sx={{*/}
+                {/*        display: 'flex',*/}
+                {/*        flexDirection: 'row',*/}
+                {/*        justifyContent: 'space-between',*/}
+                {/*        alignItems: 'center'*/}
+                {/*    }}*/}
+                {/*>*/}
+                {/*    <Logo/>*/}
+                {/*    <DesktopMenu pagesList={pagesList}/>*/}
+                {/*</Toolbar>*/}
                 <SubscribeFooterForm/>
                 <ContactBlock/>
             </Container>

@@ -8,20 +8,26 @@ const DetailedOrder = ({developPrices}) => {
         <Box
             sx={{
                 display: 'flex',
-                flexFlow: "row wrap"
+                flexFlow: "row wrap",
+                maxHeight:'90vh',
+                overflow:'auto',
+                maxWidth:800,
             }}
         >
             <CardMedia
                 component={'img'}
                 src={developPrices.image}
                 sx={{
-                    maxWidth:600,
+                    maxWidth:400,
                     m:'0 auto'
                 }}
             />
             <Typography
-                variant={'h3'}
+                variant={'h6'}
                 textAlign={'justify'}
+                sx={{
+
+                }}
             >
                 {developPrices.fullText}
             </Typography>

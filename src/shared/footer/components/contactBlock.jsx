@@ -24,7 +24,7 @@ const ContactBlock = () => {
                 Санкт-Петербург, Невский проспект д. 1 <br/>
                 Телефон для связи 8 (812) 420 69 13
             </Typography>
-          <SocialButtons color={'white'}/>
+          {/*<SocialButtons color={'white'}/>*/}
         </Box>
     );
 };

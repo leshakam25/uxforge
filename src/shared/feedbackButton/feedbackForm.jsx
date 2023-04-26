@@ -42,14 +42,22 @@ function FeedbackForm({handleClose}) {
                     {...register('phone')}
                     variant={'filled'}
                     fullWidth
-                    label={'Номер телефона?'}
+                    label={'Номер телефона'}
                 />
                 <TextField
                     {...register('email')}
                     variant={'filled'}
                     fullWidth
-                    label={'Или Email?'}
+                    label={'Email'}
                 />
+                    <TextField
+                        {...register('message')}
+                        variant={'filled'}
+                        multiline
+                        rows={4}
+                        fullWidth
+                        label={'Оставьте ваше сообщение'}
+                    />
                 </Box>
                 <Button
                     type="submit"

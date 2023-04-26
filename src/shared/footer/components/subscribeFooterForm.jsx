@@ -1,5 +1,5 @@
 import React from 'react';
-import {ButtonGroup, Card, TextField} from "@mui/material";
+import {Card, TextField} from "@mui/material";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
@@ -28,23 +28,24 @@ const SubscribeFooterForm = () => {
                 Подпишитесь для получения наших последних новостей
             </Typography>
             <Box>
-                <ButtonGroup>
-                    <TextField
-                        variant={'filled'}
-                        label={'Введите email'}
-                    />
-                    <Button
-                        variant={'contained'}
-                        size={'large'}
-                        sx={{
-                            height: 55,
-                            boxShadow: 'none',
-                            fontWeight: 800
-                        }}
-                    >
-                        Подписаться
-                    </Button>
-                </ButtonGroup>
+                <TextField
+                    variant={'filled'}
+                    label={'Введите email'}
+                    fullWidth
+                    sx={{my:1}}
+                />
+                <Button
+                    variant={'contained'}
+                    size={'large'}
+                    fullWidth
+                    sx={{
+                        height: 55,
+                        boxShadow: 'none',
+                        fontWeight: 800
+                    }}
+                >
+                    Подписаться
+                </Button>
             </Box>
         </Card>
     );

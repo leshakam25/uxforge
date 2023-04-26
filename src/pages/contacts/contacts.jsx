@@ -17,12 +17,15 @@ const Contacts = () => {
                 my:2
             }}>
                 <Typography fontWeight={"800"}>
+                    {contactsData.email}
+                </Typography>
+                <Typography fontWeight={"800"}>
                     {contactsData.adress}
                 </Typography>
                 <Typography fontWeight={"800"}>
                     {contactsData.phone}
                 </Typography>
-                <SocialButtons/>
+                {/*<SocialButtons/>*/}
             </Box>
             <iframe
                 src="https://yandex.ru/map-widget/v1/?ll=30.312757%2C59.936949&mode=whatshere&whatshere%5Bpoint%5D=30.312129%2C59.936410&whatshere%5Bzoom%5D=17&z=17.57"

@@ -1,10 +1,12 @@
 import React from 'react';
 import Typography from "@mui/material/Typography";
-import {Card, CardMedia, Modal} from "@mui/material";
+import {Card, CardMedia, Fade, Modal} from "@mui/material";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import MakeOrderDevelopForm from "./makeOrderDevelopForm.jsx";
 import DetailedOrder from "./detailedOrder.jsx";
+import IconButton from "@mui/material/IconButton";
+import CancelIcon from "@mui/icons-material/Cancel.js";
 
 const DevelopPricesItem = ({developPrices}) => {
     const discountIcon = 'https://i.postimg.cc/25Mw2tWb/free-icon-discount-label-2981281.png'
@@ -15,6 +17,21 @@ const DevelopPricesItem = ({developPrices}) => {
     const [openDetailed, setOpenDetailed] = React.useState(false);
     const handleOpenDetailed = () => setOpenDetailed(true);
     const handleCloseDetailed = () => setOpenDetailed(false);
+
+    const modalStyle = {
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        maxWidth:600,
+        width: "auto",
+        height: 'auto',
+        bgcolor: 'background.paper',
+        p: 4,
+        border: 'none',
+        borderRadius: 2
+    }
+
 
     return (
         <>
@@ -157,28 +174,33 @@ const DevelopPricesItem = ({developPrices}) => {
                     />
                 }
             </Card>
+
             <Modal
                 open={openForm}
                 onClose={handleCloseForm}
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description"
             >
-                <Box
-                    sx={{
-                        position: 'absolute',
-                        top: '50%',
-                        left: '50%',
-                        transform: 'translate(-50%, -50%)',
-                        width: "auto",
-                        height: 'auto',
-                        bgcolor: 'background.paper',
-                        border: '2px solid #000',
-                        boxShadow: 24,
-                        p: 4,
-                    }}
-                >
-                    <MakeOrderDevelopForm developPrices={developPrices}/>
-                </Box>
+                <Fade in={openForm}>
+                    <Box
+                        sx={modalStyle}
+                    >
+                        <MakeOrderDevelopForm developPrices={developPrices}/>
+                        <IconButton
+                            onClick={handleCloseForm}
+                            color={'error'}
+                            size={'small'}
+                            sx={{
+                                position: "absolute",
+                                top: 0,
+                                right: 0,
+                                opacity: 0.9
+                            }}
+                        >
+                            <CancelIcon/>
+                        </IconButton>
+                    </Box>
+                </Fade>
             </Modal>
             <Modal
                 open={openDetailed}
@@ -186,23 +208,28 @@ const DevelopPricesItem = ({developPrices}) => {
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description"
             >
-                <Box
-                    sx={{
-                        position: 'absolute',
-                        top: '50%',
-                        left: '50%',
-                        transform: 'translate(-50%, -50%)',
-                        width: "auto",
-                        height: 'auto',
-                        bgcolor: 'background.paper',
-                        border: '2px solid #000',
-                        boxShadow: 24,
-                        p: 4,
-                    }}
-                >
-                    <DetailedOrder developPrices={developPrices}/>
-                </Box>
+                <Fade in={openDetailed}>
+                    <Box
+                        sx={modalStyle}
+                    >
+                        <DetailedOrder developPrices={developPrices}/>
+                        <IconButton
+                            onClick={handleCloseDetailed}
+                            color={'error'}
+                            size={'small'}
+                            sx={{
+                                position: "absolute",
+                                top: 0,
+                                right: 0,
+                                opacity: 0.9
+                            }}
+                        >
+                            <CancelIcon/>
+                        </IconButton>
+                    </Box>
+                </Fade>
             </Modal>
+
         </>
     );
 };

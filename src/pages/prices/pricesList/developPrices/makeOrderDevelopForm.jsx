@@ -7,7 +7,6 @@ const MakeOrderDevelopForm = ({developPrices}) => {
     return (
         <Grid
             container
-            gap={2}
             display={'flex'}
             justifyContent={'space-between'}
         >
@@ -20,9 +19,10 @@ const MakeOrderDevelopForm = ({developPrices}) => {
             <Grid
                 item
                 xs={12}
-                md={5.85}
+                md={6}
             >
                 <TextField
+                    variant={'standard'}
                     color={'secondary'}
                     label={'Как вас зовут?'}
                     fullWidth
@@ -32,9 +32,10 @@ const MakeOrderDevelopForm = ({developPrices}) => {
             <Grid
                 item
                 xs={12}
-                md={5.85}
+                md={6}
             >
                 <TextField
+                    variant={'standard'}
                     color={'secondary'}
                     label={'Ваш номер телефона'}
                     fullWidth
@@ -44,8 +45,12 @@ const MakeOrderDevelopForm = ({developPrices}) => {
                 item
                 xs={12}
                 md={12}
+                sx={{
+                    py:1
+                }}
             >
                 <TextField
+                    variant={'standard'}
                     color={'secondary'}
                     label={'Оставьте сообщение'}
                     fullWidth

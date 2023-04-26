@@ -4,12 +4,29 @@ import {Card, CardMedia, Modal} from "@mui/material";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import MakeOrderSeoForm from "./makeOrderSeoForm.jsx";
+import IconButton from "@mui/material/IconButton";
+import CancelIcon from "@mui/icons-material/Cancel.js";
 
 const SeoPricesItem = ({seoPrices}) => {
     const discountIcon = 'https://i.postimg.cc/25Mw2tWb/free-icon-discount-label-2981281.png'
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
+
+    const modalStyle = {
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        maxWidth:600,
+        width: "auto",
+        height: 'auto',
+        bgcolor: 'background.paper',
+        p: 4,
+        border: 'none',
+        borderRadius: 2
+    }
 
     return (
         <>
@@ -146,20 +163,22 @@ const SeoPricesItem = ({seoPrices}) => {
                 aria-describedby="modal-modal-description"
             >
                 <Box
-                    sx={{
-                        position: 'absolute',
-                        top: '50%',
-                        left: '50%',
-                        transform: 'translate(-50%, -50%)',
-                        width: "auto",
-                        height: 'auto',
-                        bgcolor: 'background.paper',
-                        border: '2px solid #000',
-                        boxShadow: 24,
-                        p: 4,
-                    }}
+                    sx={modalStyle}
                 >
-                    makeOrderSeoForm
+                    <MakeOrderSeoForm seoPrices={seoPrices}/>
+                    <IconButton
+                        onClick={handleClose}
+                        color={'error'}
+                        size={'small'}
+                        sx={{
+                            position: "absolute",
+                            top: 0,
+                            right: 0,
+                            opacity: 0.9
+                        }}
+                    >
+                        <CancelIcon/>
+                    </IconButton>
                 </Box>
             </Modal>
         </>

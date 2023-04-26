@@ -3,7 +3,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import { useNavigate } from "react-router-dom";
-import FeedbackButton from "../../contactButton/feedbackButton.jsx";
+import FeedbackButton from "../../feedbackButton/feedbackButton.jsx";
 
 const DesktopMenu = ({pagesList}) => {
     const navigate = useNavigate();

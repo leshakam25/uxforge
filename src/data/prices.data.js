@@ -104,6 +104,7 @@ export const seoPrices = [
     {
         id: 0,
         title: 'Аудит сайта',
+        title2:'аудит сайта',
         subtitle: '',
         discount: false,
         price: 20000,
@@ -119,6 +120,7 @@ export const seoPrices = [
     {
         id: 1,
         title: 'Продвижение одностраничного сайта',
+        title2:'продвижение одностраничного сайта',
         subtitle: '',
         discount: false,
         price: 20000,
@@ -136,6 +138,7 @@ export const seoPrices = [
     {
         id: 2,
         title: 'Продвижение многостраничного сайта',
+        title2:"продвижение многостраничного сайта",
         subtitle: 'К работам по продвижению одностраничного сайта добавляются:',
         discount: false,
         price: 30000,
@@ -148,6 +151,7 @@ export const seoPrices = [
     {
         id: 3,
         title: 'Внешнее продвижение',
+        title2:"внешнее продвижение",
         subtitle: '',
         discount: true,
         price: 20000,

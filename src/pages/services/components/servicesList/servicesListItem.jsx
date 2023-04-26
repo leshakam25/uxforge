@@ -31,7 +31,8 @@ const ServicesListItem = ({services, stages}) => {
                     <Typography
                         variant={'h2'}
                         sx={{
-                            pb: 1
+                            pb: 1,
+                            textDecoration: 'underline'
                         }}
                     >
                         {services.title}
@@ -68,7 +69,7 @@ const ServicesListItem = ({services, stages}) => {
                         maxHeight: '88vh',
                         width: '90vh',
                         overflowY: 'auto',
-                        borderRadius:'4px'
+                        borderRadius: '4px'
                     }}>
                         <Typography
                             variant="h2"
@@ -122,7 +123,7 @@ const ServicesListItem = ({services, stages}) => {
                                 position: "absolute",
                                 top: 0,
                                 right: 0,
-                                opacity:0.9
+                                opacity: 0.9
                             }}
                         >
                             <CancelIcon/>

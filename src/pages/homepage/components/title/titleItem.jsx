@@ -1,7 +1,7 @@
 import React from 'react';
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import FeedbackButton from "../../../../shared/contactButton/feedbackButton.jsx";
+import FeedbackButton from "../../../../shared/feedbackButton/feedbackButton.jsx";
 
 const TitleItem = ({titleNews}) => {
     return (
