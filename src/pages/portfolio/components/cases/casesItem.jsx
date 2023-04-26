@@ -7,6 +7,7 @@ import Backdrop from "@mui/material/Backdrop";
 import Fade from "@mui/material/Fade";
 import IconButton from "@mui/material/IconButton";
 import CancelIcon from "@mui/icons-material/Cancel";
+import {modalStyle} from "../../../../data/styles.data.js";
 
 const CasesItem = ({cases}) => {
     const [open, setOpen] = React.useState(false);
@@ -76,28 +77,14 @@ const CasesItem = ({cases}) => {
                 }}
             >
                 <Fade in={open}>
-                    <Box sx={{
-                        position: 'absolute',
-                        top: '50%',
-                        left: '50%',
-                        transform: 'translate(-50%, -50%)',
-                        bgcolor: 'background.paper',
-                        boxShadow: 24,
-                        p: {xs:1,md:3},
-                        maxHeight: '88vh',
-                        maxWidth: '90vh',
-                        overflowY: 'auto',
-                        borderRadius: '4px',
-                        display: 'flex',
-                        flexFlow:{xs:'column nowrap', md:'row nowrap'}
-                    }}>
+                    <Box sx={modalStyle}>
                         <CardMedia
                             component={'img'}
                             src={cases.image}
                             sx={{
                                 maxWidth: 400,
                                 maxHeight: 400,
-                                mx: 2
+                                m: '0 auto'
                             }}
                         />
                         <Box
@@ -106,15 +93,8 @@ const CasesItem = ({cases}) => {
                             }}
                         >
                             <Typography
-                                gutterBottom
-                                variant={'h4'}
-                                textAlign={'right'}
-                            >
-                                Проделанная работа
-                            </Typography>
-                            <Typography
                                 variant={'body1'}
-                                textAlign={'left'}
+                                textAlign={'justify'}
                             >
                                 {cases.fullText}
                             </Typography>

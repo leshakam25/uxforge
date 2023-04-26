@@ -7,6 +7,7 @@ import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
 import IconButton from "@mui/material/IconButton";
 import CancelIcon from '@mui/icons-material/Cancel';
+import {modalStyle} from "../../../../data/styles.data.js";
 
 const ServicesListItem = ({services, stages}) => {
     const [open, setOpen] = React.useState(false);
@@ -58,19 +59,7 @@ const ServicesListItem = ({services, stages}) => {
                 }}
             >
                 <Fade in={open}>
-                    <Box sx={{
-                        position: 'absolute',
-                        top: '50%',
-                        left: '50%',
-                        transform: 'translate(-50%, -50%)',
-                        bgcolor: 'background.paper',
-                        boxShadow: 24,
-                        p: 2,
-                        maxHeight: '88vh',
-                        width: '90vh',
-                        overflowY: 'auto',
-                        borderRadius: '4px'
-                    }}>
+                    <Box sx={modalStyle}>
                         <Typography
                             variant="h2"
                             component="h2"

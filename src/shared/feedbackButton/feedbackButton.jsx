@@ -3,6 +3,7 @@ import Button from "@mui/material/Button";
 import {Backdrop, Fade, Modal} from "@mui/material";
 import Box from "@mui/material/Box";
 import FeedbackForm from "./feedbackForm.jsx";
+import {modalStyle} from "../../data/styles.data.js";
 
 const FeedbackButton = ({mx}) => {
     const [open, setOpen] = React.useState(false);
@@ -42,22 +43,8 @@ const FeedbackButton = ({mx}) => {
             >
                 <Fade in={open}>
                     <Box
-                        sx={{
-                            position: 'absolute',
-                            top: '50%',
-                            left: '50%',
-                            transform: 'translate(-50%, -50%)',
-                            bgcolor: 'background.paper',
-                            border: 'none',
-                            boxShadow: 24,
-                            p:
-                                {
-                                    xs: 1,
-                                    md: 3
-                                },
-                            borderRadius: '4px',
-                            maxWidth: '300px'
-                        }}>
+                        sx={modalStyle}
+                    >
                         <FeedbackForm handleClose={handleClose}/>
                     </Box>
                 </Fade>

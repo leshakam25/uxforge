@@ -7,6 +7,7 @@ import MakeOrderDevelopForm from "./makeOrderDevelopForm.jsx";
 import DetailedOrder from "./detailedOrder.jsx";
 import IconButton from "@mui/material/IconButton";
 import CancelIcon from "@mui/icons-material/Cancel";
+import {modalStyle} from "../../../../data/styles.data.js";
 
 const DevelopPricesItem = ({developPrices}) => {
     const discountIcon = 'https://i.postimg.cc/25Mw2tWb/free-icon-discount-label-2981281.png'
@@ -17,21 +18,6 @@ const DevelopPricesItem = ({developPrices}) => {
     const [openDetailed, setOpenDetailed] = React.useState(false);
     const handleOpenDetailed = () => setOpenDetailed(true);
     const handleCloseDetailed = () => setOpenDetailed(false);
-
-    const modalStyle = {
-        position: 'absolute',
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)',
-        maxWidth:600,
-        width: "auto",
-        height: 'auto',
-        bgcolor: 'background.paper',
-        p: 4,
-        border: 'none',
-        borderRadius: 2
-    }
-
 
     return (
         <>
