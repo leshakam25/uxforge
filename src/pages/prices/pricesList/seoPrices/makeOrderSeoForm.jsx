@@ -8,13 +8,14 @@ const MakeOrderSeoForm = ({seoPrices}) => {
         <Grid
             container
             display={'flex'}
-            justifyContent={'space-between'}
+            justifyContent={'center'}
         >
             <Typography
                 variant={'h3'}
                 gutterBottom
+                textAlign={'center'}
             >
-                Форма заказа услуги {seoPrices.title2}
+                Форма заказа услуги <br/> {seoPrices.title2}
             </Typography>
             <Grid
                 item

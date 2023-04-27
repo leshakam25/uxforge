@@ -8,13 +8,14 @@ const MakeOrderDevelopForm = ({developPrices}) => {
         <Grid
             container
             display={'flex'}
-            justifyContent={'space-between'}
+            justifyContent={'center'}
         >
             <Typography
                 variant={'h3'}
                 gutterBottom
+                textAlign={'center'}
             >
-                Форма заказа услуги создание {developPrices.title2}
+                Форма заказа услуги  <br/> создание {developPrices.title2}
             </Typography>
             <Grid
                 item
